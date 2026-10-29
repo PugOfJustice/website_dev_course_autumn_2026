@@ -20,10 +20,14 @@
 
 .pseudo-list {
      font-size: 18px;
-     font-family: Arial, sans-serif;
+     color: #fff;
+     font-family: 'Courier New', monospace;
      text-align: center;
      list-style-type: inside;
+     border-radius: 10px;
      padding: 10px;
+     width: 50%;
+     margin: 0 auto;
    }
 
    .pseudo-list li {
@@ -31,10 +35,13 @@
    }
 
    .pseudo-list li:nth-child(odd) {
-     background-color: #f2f2f2;
+     background-color: #7a7a7a;
+     border-radius: 10px;
    }
    .pseudo-list li:nth-child(even) {
-     background-color: #e6e6e6;
+    color: #000000;
+     background-color: #ffdea4;
+     border-radius: 10px;
    }
    
 
@@ -83,6 +90,16 @@
       }
     }
 
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+
  </style>
 
 </head>
@@ -96,6 +113,7 @@
 <img
 src="https://thumbs.dreamstime.com/b/funny-pug-dog-grass-33268472.jpg"     
 alt="mopsi"
+class="filter-image"
 width="200"
 height="200"
      />
@@ -131,17 +149,17 @@ height="200"
         <a href="https://www.laurea.fi">Visit Laurea</a>
 
 <ul class="pseudo-list">
-    <li>Ensimmäinen</li>
-    <li>Toinen</li>
-    <li>Kolmas</li>
-    <li>Neljäs</li>
+    <li>Se on hieno koulu</li>
+    <li>Mahtava koulu</li>
+    <li>Iso koulu</li>
+    <li>ÄÄÄÄÄÄÄ</li>
 </ul>
 
 
         <!--kontaktipaneeli-->
         
 
-        <h3>Contact Us</h3>
+        <h3>Pistä palautetta</h3>
     <form action="/submit_form" method="post">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br><br>
