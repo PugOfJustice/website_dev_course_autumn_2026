@@ -100,6 +100,25 @@
   filter: grayscale(0%);
 }
 
+
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+
+}
+.quote::before {
+  content: "“";
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 30px;
+  color: #888;
+}
+
+
+
  </style>
 
 </head>
@@ -108,7 +127,7 @@
 
 
 <!--kuvan asettelu-->
-<p> Peak dog physique</p>
+<p> Peak dog physique. Hän haluaa että kosket hiirelläsi</p>
 
 <img
 src="https://thumbs.dreamstime.com/b/funny-pug-dog-grass-33268472.jpg"     
@@ -126,6 +145,10 @@ height="200"
 </div>
 
 
+
+<blockquote class="quote">
+Se on semmone fifty sixty, että se on semmone fifty sixty.
+</blockquote>
 
 
      <!--Sisältö ja listat-->
