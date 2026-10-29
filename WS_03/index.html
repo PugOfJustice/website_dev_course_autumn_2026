@@ -25,6 +25,43 @@
      width: 300px;
      margin: 0 auto;
    }
+   .transition-button {
+     background-color: #4CAF50;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   .transition-button:hover {
+     background-color: #000801;
+   }
+
+   .animation-box {
+     width: 100px;
+     height: 100px;
+     background-color: #4CAF50;
+     margin: 20px auto;
+     font-size: 16px;
+     color: rgb(7, 0, 0);
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     border-radius: 10px;
+     animation: moveBox 2s ease-in-out infinite alternate;
+   }
+
+    @keyframes moveBox {
+      100% {
+        transform: translateX(-200px);
+      }
+      0% {
+        transform: translateX(200px);
+      }
+    }
+
  </style>
 
 </head>
@@ -34,12 +71,23 @@
 
 <!--kuvan asettelu-->
 <p> Peak dog physique</p>
+
 <img
 src="https://thumbs.dreamstime.com/b/funny-pug-dog-grass-33268472.jpg"     
 alt="mopsi"
 width="200"
 height="200"
      />
+<br>
+<button class="transition-button">hoover me</button>
+
+
+<div class="animation-box">
+  Et saa mua kiinni C:
+</div>
+
+
+
 
      <!--Sisältö ja listat-->
 <div class="content-box">
@@ -57,7 +105,6 @@ height="200"
 
         <p>Tästä linkistä pääsee salaiselle koulun verkkosivulle</p>
         <a href="https://www.laurea.fi">Visit Laurea</a>
-
         <!--kontaktipaneeli-->
         
 
@@ -73,5 +120,4 @@ height="200"
     </form>
 
 </body>
-
 </html>
