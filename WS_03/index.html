@@ -2,7 +2,7 @@
 <html lang="fi">
 <head>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 
  <title>Hieno välilehti</title>
  <style>
@@ -45,7 +45,32 @@
      border-radius: 10px;
    }
    
+.transition-button {
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
 
+        animation-box {
+     width: 100px;
+     height: 100px;
+     background-color: #4CAF50;
+     margin: 20px auto;
+     font-size: 16px;
+     color: rgb(7, 0, 0);
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     border-radius: 10px;
+     animation: moveBox 2s ease-in-out infinite alternate;
+   }
   
    form {
      background-color: #f2f2f2;
@@ -93,6 +118,8 @@
   font-size: 20px;
   color: #060000;
 
+
+  
 }
 
 
