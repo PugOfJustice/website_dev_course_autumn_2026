@@ -1,206 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
-<head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
 
-<link rel="stylesheet" href="style.css">
+    <title>Hieno välilehti</title>
+  </head>
+  <body>
+    <h1>Ensimmäinen yritys osa 3</h1>
 
- <title>Hieno välilehti</title>
- <style>
+    <!--kuvan asettelu-->
+    <p>Peak dog physique. Hän haluaa että kosket hiirelläsi</p>
 
-   body {
-     background-color:rgb(244, 202, 124);
-     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
-     margin: 100px;
-     text-align: center;
-     list-style-position:inside;
-   }
-   h1 {
-     color: #3fb438;
-   }
+    <img
+      src="https://thumbs.dreamstime.com/b/funny-pug-dog-grass-33268472.jpg"
+      alt="mopsi"
+      class="filter-image"
+      width="200"
+      height="200"
+    />
+    <br />
+    <button class="transition-button">hoover me</button>
 
-.pseudo-list {
-     font-size: 18px;
-     color: #fff;
-     font-family: 'Courier New', monospace;
-     text-align: center;
-     list-style-type: inside;
-     border-radius: 10px;
-     padding: 10px;
-     width: 50%;
-     margin: 0 auto;
-   }
+    <div class="animation-box">Et saa mua kiinni C:</div>
 
-   .pseudo-list li {
-     padding: 5px;
-   }
+    <blockquote class="quote">
+      Se on semmone fifty sixty, että se on semmone fifty sixty.
+    </blockquote>
 
-   .pseudo-list li:nth-child(odd) {
-     background-color: #7a7a7a;
-     border-radius: 10px;
-   }
-   .pseudo-list li:nth-child(even) {
-    color: #000000;
-     background-color: #ffdea4;
-     border-radius: 10px;
-   }
-   
-.transition-button {
-        background-color: lightblue;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-      
-      .transition-button:hover {
-        background-color: lightcoral;
-      }
-
-        animation-box {
-     width: 100px;
-     height: 100px;
-     background-color: #4CAF50;
-     margin: 20px auto;
-     font-size: 16px;
-     color: rgb(7, 0, 0);
-     text-align: center;
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     border-radius: 10px;
-     animation: moveBox 2s ease-in-out infinite alternate;
-   }
-  
-   form {
-     background-color: #f2f2f2;
-     padding: 20px;
-     border-radius: 50px;
-     width: 300px;
-     margin: 0 auto;
-   }
-  
-
-    @keyframes moveBox {
-      100% {
-        transform: translateX(-200px);
-      }
-      0% {
-        transform: translateX(200px);
-      }
-    }
-
-
-
-
-.quote {
-  position: relative;
-  padding-left: 20px;
-  font-style: italic;
-
-}
-.quote::before {
-  content: "“";
-  font-size: 40px;
-  position: relative;
-  left: 0;
-  top: 0;
-  font-size: 20px;
-  color: #060000;
-}
-
-.quote::after {
-  content: "”";
-  font-size: 40px;
-  position: relative;
-  right: 0;
-  bottom: 0;
-  font-size: 20px;
-  color: #060000;
-
-
-  
-}
-
-
-
- </style>
-
-</head>
-<body>
-       <h1>Ensimmäinen yritys osa 3</h1>
-
-
-<!--kuvan asettelu-->
-<p> Peak dog physique. Hän haluaa että kosket hiirelläsi</p>
-
-<img
-src="https://thumbs.dreamstime.com/b/funny-pug-dog-grass-33268472.jpg"     
-alt="mopsi"
-class="filter-image"
-width="200"
-height="200"
->
-<br>
-<button class="transition-button">hoover me</button>
-
-
-<div class="animation-box">
-  Et saa mua kiinni C:
-</div>
-
-
-
-<blockquote class="quote">
-    Se on semmone fifty sixty, että se on semmone fifty sixty.
-</blockquote>
-
-
-     <!--Sisältö ja listat-->
-<div class="content-box">
-     <h2>Tässä kerron kuinka vaikeaa tämän tekeminen on kolmessa osassa</h2>
-     <ol>
+    <!--Sisältö ja listat-->
+    <div class="content-box">
+      <h2>Tässä kerron kuinka vaikeaa tämän tekeminen on kolmessa osassa</h2>
+      <ol>
         <li>Todella vaikeaa</li>
         <li>Erittäin hankalaa</li>
         <li>Kurjaa ja toivotonta</li>
-     </ol>
-     <h3> Sitten kerron kuinka kivaa tämä on</h3>
+      </ol>
+      <h3>Sitten kerron kuinka kivaa tämä on</h3>
 
-     <ul>
+      <ul>
         <li>Todella kivaa</li>
         <li>Erittäin hauskaa</li>
         <li>Helppoa ja osaamista edistävää</li>
-
       </ul>
-</div>
+    </div>
 
+    <p>Tästä linkistä pääsee salaiselle koulun verkkosivulle</p>
+    <a href="https://www.laurea.fi">Visit Laurea</a>
 
+    <ul class="pseudo-list">
+      <li>Se on hieno koulu</li>
+      <li>Mahtava koulu</li>
+      <li>Iso koulu</li>
+      <li>ÄÄÄÄÄÄÄ</li>
+    </ul>
 
+    <!--kontaktipaneeli-->
 
-        <p>Tästä linkistä pääsee salaiselle koulun verkkosivulle</p>
-        <a href="https://www.laurea.fi">Visit Laurea</a>
-
-<ul class="pseudo-list">
-    <li>Se on hieno koulu</li>
-    <li>Mahtava koulu</li>
-    <li>Iso koulu</li>
-    <li>ÄÄÄÄÄÄÄ</li>
-</ul>
-
-
-        <!--kontaktipaneeli-->
-        
-
-        <h3>Pistä palautetta</h3>
+     <table>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </table>
+    <h3>Pistä palautetta</h3>
     <form action="/submit_form" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
-        <input type="submit" value="Submit">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message"></textarea><br /><br />
+      <input type="submit" value="Submit" />
     </form>
-
-</body>
+  </body>
 </html>
