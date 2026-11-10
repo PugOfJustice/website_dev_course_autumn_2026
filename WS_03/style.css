@@ -1,7 +1,23 @@
+body {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
 /* Nappi */
 
 .transition-button {
-  background-color: lightblue;
+  background-color: rgb(252, 252, 252);
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -9,7 +25,7 @@
 }
 
 .transition-button:hover {
-  background-color: lightcoral;
+  background-color: #fd8d04;
 }
 
 /* Animaatio */
@@ -17,7 +33,7 @@
 .animation-box {
   width: 100px;
   height: 100px;
-  background-color: #4caf50;
+  background-color: #fd8d04;
   margin: 20px auto;
   font-size: 16px;
   color: rgb(7, 0, 0);
@@ -31,11 +47,55 @@
 
 @keyframes move {
   from {
-    transform: translateX(0);
+    transform: translateX(-100px);
   }
   to {
     transform: translateX(100px);
   }
+}
+
+/* Listat */
+ol {
+  list-style-position: inside;
+  text-align: center;
+}
+
+/* Tavalliset pallolistat */
+ul:not(.pseudo-list) {
+  list-style-position: inside;
+  text-align: center;
+}
+
+/* Pseudo-lista */
+ul.pseudo-list {
+  list-style-position: inside;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #060606;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-color: #060606;
+}
+
+.pseudo-list li {
+  padding: 8px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #060606;
+  border-radius: 5px;
+  border-color: #060606;
+}
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+  border-radius: 5px;
+  border-color: #060606;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
 }
 
 /* Suodatin */
@@ -52,47 +112,52 @@
 /* Lainaus */
 
 .quote {
-  position: relative;
   margin: 20px;
-  padding: 20px 50px;
+  padding: 20px;
   font-style: italic;
-  color: rgb(194, 27, 27);
+  color: rgb(11, 11, 11);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.quote::before,
+.quote::after {
+  font-size: 30px;
+  font-family: Georgia, serif;
+  font-style: normal;
+  color: black;
+  vertical-align: middle;
 }
 
 .quote::before {
   content: "\201C";
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  font-size: 40px;
-  color: lightgray;
-  line-height: 1;
+  margin-right: 5px;
 }
 
 .quote::after {
   content: "\201D";
-  color: lightgray;
-  font-size: 40px;
+  margin-left: 5px;
 }
-
-/* Task 4: Format the Table and Form */
 
 /* Table */
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #060606;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 th,
 td {
-  border: 1px solid #ddd;
+  border: 1px solid #060606;
   padding: 8px;
   text-align: left;
-}
-
-th {
-  background-color: #f2f2f2;
+  background-color: white;
 }
 
 /* Form */
@@ -121,7 +186,7 @@ input[type="email"] {
 /* Submit Button */
 
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #fd8d04;
   color: white;
   padding: 10px;
   border: none;
@@ -140,4 +205,9 @@ input[type="submit"]:hover {
 
 .pseudo-list li:nth-child(even) {
   background-color: white;
+}
+a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
