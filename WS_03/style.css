@@ -1,49 +1,51 @@
 
 
- <!-- Nappi --->
+
+
+/* Nappi */
 
 .transition-button {
-        background-color: lightblue;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-      
-      .transition-button:hover {
-        background-color: lightcoral;
-      }
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+}
 
 
-<!-- Animaatio --->
+/* Animaatio */
 
-  animation-box {
-     width: 100px;
-     height: 100px;
-     background-color: #4CAF50;
-     margin: 20px auto;
-     font-size: 16px;
-     color: rgb(7, 0, 0);
-     text-align: center;
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     border-radius: 10px;
-     animation: moveBox 2s ease-in-out infinite alternate;
-   }
+.animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    margin: 20px auto;
+    font-size: 16px;
+    color: rgb(7, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    animation: move 2s ease-in-out infinite alternate;
+}
 
-      
-      @keyframes move {
-        from {
-          left: 0;
-        }
-        to {
-          left: 100px;
-        }
-      }
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
 
 
-      <!-- Suodatin --->
+/* Suodatin */
+
 .filter-image {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
@@ -51,4 +53,31 @@
 
 .filter-image:hover {
     filter: grayscale(0%);
+}
+
+
+/* Lainaus */
+
+.quote {
+    position: relative;
+    margin: 20px;
+    padding: 20px 50px;
+    font-style: italic;
+    color: rgb(194, 27, 27);
+}
+
+.quote::before {
+    content: "\201C";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 40px;
+    color: lightgray;
+    line-height: 1;
+}
+
+.quote::after {
+    content: "\201D";
+    color: lightgray;
+    font-size: 40px;
 }
