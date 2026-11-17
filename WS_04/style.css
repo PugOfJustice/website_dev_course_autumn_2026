@@ -234,15 +234,15 @@ ul {
   margin-top: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .responsive-box {
-    background-color: lightcoral;
+    background-color: rgb(250, 4, 4);
   }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 1001px) {
   .responsive-box {
-    background-color: lightseagreen;
+  background-color: #fd8d04;
   }
 
 }
