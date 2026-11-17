@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Hieno välilehti</title>
-</head>
-<body>
-      <header>
+  </head>
+  <body>
+    <header>
       <h1>Workshop harjoittelu</h1>
     </header>
 
-<!-- Sivun kaksipalstainen rakenne -->
-<div class="page-layout">
+    <!-- Sivun kaksipalstainen rakenne -->
+    <div class="page-layout">
+      <!-- Vasen navigointipalkki -->
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-  <!-- Vasen navigointipalkki -->
-  <aside class="sidebar">
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </aside>
+      <!-- Oikeanpuoleinen sisältöalue -->
+      <main class="content">
+        <div class="grid-container">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+        </div>
 
-  <!-- Oikeanpuoleinen sisältöalue -->
-  <main class="content">
-    <div class="grid-container">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-    </div>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>Olen motivoitunut opettelemaan IT-juttuja mutta olen hidas siinä ja se on vaikeaa.</p>
+        </section>
+      </main>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Olen motivoitunut opettelemaan IT-juttuja mutta olen hidas siinä ja se on vaikeaa.</p>
-    </section>
-  </main>
-
-  <!-- Oikeanpuoleinen sisältöalue -->
+      <!-- Oikeanpuoleinen sisältöalue -->
       <div class="flex-panel">
-      <h2>Flexbox Example</h2>
-      <div class="flex-container">
-        <div class="flex-item">Box 1</div>
-        <div class="flex-item">Box 2</div>
-        <div class="flex-item">Box 3</div>
+        <h2>Flexbox Example</h2>
+        <div class="flex-container">
+          <div class="flex-item">Box 1</div>
+          <div class="flex-item">Box 2</div>
+          <div class="flex-item">Box 3</div>
+        </div>
       </div>
     </div>
-</div>
-
 
     <!--kuvan asettelu-->
     <p>Peak dog physique ja kissa joka epäilee. Koske hiirelläsi</p>
@@ -62,17 +60,17 @@
         class="filter-image"
         width="200"
         height="200"
-      />
+      >
       <img
         src="images.jpg"
         alt="Catter"
         class="filter-image"
         width="200"
         height="200"
-      />
+      >
     </div>
     <div class="responsive-box">Muuta ikkunan kokoa niin näet hassun jutun</div>
-    <br />
+    <br>
     <button class="transition-button">hoover me</button>
 
     <div class="animation-box">Et saa mua kiinni C:</div>
@@ -109,7 +107,6 @@
     </ul>
 
     <!--kontaktipaneeli ja table-->
-
     <table>
       <tr>
         <th>Header 1</th>
@@ -124,18 +121,20 @@
         <td>Mentten</td>
       </tr>
     </table>
+
     <h3>Pistä palautetta</h3>
     <form action="/submit_form" method="post">
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" /><br /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br /><br />
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message"></textarea><br /><br />
-      <input type="submit" value="Submit" />
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea><br><br>
+      <input type="submit" value="Submit">
     </form>
+
     <footer>
-  <p>Copyright 2026</p>
-</footer>
+      <p>Copyright 2026</p>
+    </footer>
   </body>
 </html>
