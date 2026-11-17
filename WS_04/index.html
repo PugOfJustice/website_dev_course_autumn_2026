@@ -5,33 +5,51 @@
     <title>Hieno välilehti</title>
 </head>
 <body>
+      <header>
+      <h1>Workshop harjoittelu</h1>
+    </header>
 
-  <!-- Header ja navigointi -->
-<header>
-  <h1>Workshop harjoittelu</h1>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div>
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>
+<!-- Sivun kaksipalstainen rakenne -->
+<div class="page-layout">
+
+  <!-- Vasen navigointipalkki -->
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Oikeanpuoleinen sisältöalue -->
+  <main class="content">
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Olen motivoitunut opettelemaan IT-juttuja mutta olen hidas siinä ja se on vaikeaa.</p>
+    </section>
+  </main>
+
+  <!-- Oikeanpuoleinen sisältöalue -->
+      <div class="flex-panel">
+      <h2>Flexbox Example</h2>
+      <div class="flex-container">
+        <div class="flex-item">Box 1</div>
+        <div class="flex-item">Box 2</div>
+        <div class="flex-item">Box 3</div>
+      </div>
+    </div>
 </div>
-
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Olen motivoitunut opettelemaan IT-juttuja mutta olen hidas siinä ja se on vaikeaa.</p>
-  </section>
-</main>
 
 
     <!--kuvan asettelu-->

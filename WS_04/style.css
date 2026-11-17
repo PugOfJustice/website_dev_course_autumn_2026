@@ -241,4 +241,134 @@ ul {
   .responsive-box {
     background-color: lightseagreen;
   }
+
+}
+
+.box {
+  background-color: #fd8d04;;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Sivun kaksipalstainen asettelu */
+.page-layout {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    text-align: left;
+}
+
+/* Vasen navigointipalkki */
+.sidebar {
+    width: 180px;
+    flex-shrink: 0;
+    background-color: #dce8f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: #20364b;
+    text-decoration: none;
+}
+
+/* Oikea sisältöalue */
+.content {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* Kuuden ruudun ruudukko */
+.content .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+
+.content .grid-item {
+    background-color: #fd8d04;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Flexboxin oma laatikko */
+.flex-panel {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #333;
+}
+
+/* Flexbox-asettelu */
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Yksittäiset Flexbox-laatikot */
+.flex-item {
+    background-color: #fd8d04;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Grid ja Flexbox vierekkäin */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Grid-ruudukko */
+.content .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Flexbox omaan laatikkoon */
+.flex-panel {
+    background-color: #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+/* Flexboxin laatikot */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    background-color: #fd8d04;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
