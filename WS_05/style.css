@@ -1,0 +1,444 @@
+body {
+  background-color: lightblue;
+  padding: 0px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+/* Nappi */
+
+.transition-button {
+  background-color: rgb(252, 252, 252);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+  background-color: #fd8d04;
+}
+
+/* Animaatio */
+
+.animation-box {
+  width: 100px;
+  height: 100px;
+  background-color: #fd8d04;
+  margin: 20px auto;
+  font-size: 16px;
+  color: rgb(7, 0, 0);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  animation: move 2s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+/* Listat */
+ol {
+  list-style-position: inside;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Tavalliset pallolistat */
+ul:not(.pseudo-list) {
+  list-style-position: inside;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Pseudo-lista */
+ul.pseudo-list {
+  list-style-position: inside;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #060606;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-color: #060606;
+}
+
+.pseudo-list li {
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #060606;
+  border-radius: 5px;
+  border-color: #060606;
+}
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+  border-radius: 5px;
+  border-color: #060606;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+
+/* Suodatin */
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+
+/* Lainaus */
+
+.quote {
+  margin: 20px;
+  padding: 20px;
+  font-style: italic;
+  color: rgb(11, 11, 11);
+  text-align: center;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.quote::before,
+.quote::after {
+  font-size: 30px;
+  font-family: Georgia, serif;
+  font-style: normal;
+  color: black;
+  vertical-align: middle;
+}
+
+.quote::before {
+  content: "\201C";
+  margin-right: 5px;
+}
+
+.quote::after {
+  content: "\201D";
+  margin-left: 5px;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #060606;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #060606;
+  padding: 8px;
+  text-align: left;
+  background-color: white;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Labels */
+
+label {
+  font-weight: bold;
+}
+
+/* Text and Email Input Fields */
+
+input[type="text"],
+input[type="email"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Submit Button */
+
+input[type="submit"] {
+  background-color: #fd8d04;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Submit Button Hover Effect */
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: #fd8d04;;
+  padding: 20px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  .responsive-box {
+    background-color: rgb(250, 4, 4);
+  }
+}
+
+@media (min-width: 1001px) {
+  .responsive-box {
+  background-color: #fd8d04;
+  }
+
+}
+
+.box {
+  background-color: #fd8d04;;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Sivun kaksipalstainen asettelu */
+.page-layout {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    text-align: left;
+}
+
+/* Vasen navigointipalkki */
+.sidebar {
+    width: 180px;
+    flex-shrink: 0;
+    background-color: #dce8f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: #20364b;
+    text-decoration: none;
+}
+
+/* Oikea sisältöalue */
+.content {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* Kuuden ruudun ruudukko */
+.content .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+
+.content .grid-item {
+    background-color: #fd8d04;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Flexboxin oma laatikko */
+.flex-panel {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #333;
+}
+
+/* Flexbox-asettelu */
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Yksittäiset Flexbox-laatikot */
+.flex-item {
+    background-color: #fd8d04;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Grid ja Flexbox vierekkäin */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Grid-ruudukko */
+.content .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Flexbox omaan laatikkoon */
+.flex-panel {
+    background-color: #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+/* Flexboxin laatikot */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    background-color: #fd8d04;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+
+      .responsive-nav .nav-list {
+        display: flex;
+        list-style: none;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
+    /* Navigointi vasempaan ylänurkkaan */
+.responsive-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Menu-painike */
+.menu-toggle {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Linkit piilossa oletuksena */
+.nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+    min-width: 150px;
+}
+
+/* Linkkien ulkoasu */
+.nav-list li {
+    padding: 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hiiriefekti */
+.nav-list li:hover {
+    background-color: lightgray;
+}
